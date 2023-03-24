@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Styles/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- JavaScript always included in the body and in 
+    the bottom of the page cause its heavy and also it is based 
+    on html-->
+
+  <div class="add_new_btn_mobile_only">
+    <button class="btn btn-primary d-flex align-items-center gap-2" type="submit" data-bs-toggle="modal"
+      data-bs-target="#addNewModal">
+      <i class="fas fa-plus "></i> Add Task
+    </button>
+  </div>
+  <div class="modal fade" id="addNewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Task</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Tasky</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        data-bs-target="#addNewModal">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary d-flex align-items-center gap-2" type="submit" data-bs-toggle="modal"
+          data-bs-target="#addNewModal">
+          <i class="fas fa-plus "></i> Add Task
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="mt-4">
+      <div class="row justify-content-center">
+        <div class="col-md-6 ">
+          <div class="input-group flex-nowrap shadow-lg rounded">
+            <input type="search" class="form-control" placeholder="Search Task..." aria-label="Search Task"
+              aria-describedby="addon-wrapping" />
+            <span class="input-group-text" id="addon-wrapper">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <div class="row class__contents">
+
+      </div>
+    </section>
+  </div>
+  <script src="scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
