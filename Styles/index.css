@@ -4,10 +4,10 @@
 }
 
 body {
-    background-color: rgba(221, 198, 21, 0.17) !important;
+    background-color: #ebf2ff !important;
 }
 
-.add_new_btn_mobile_only {
+.add__new__btn__mobile__only {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -17,8 +17,8 @@ body {
     width: 100%;
 }
 
-@media (min-width:720px) {
-    .add_new_btn_mobile_only {
-        display: none;
+/* @media (min-width: 768px) {
+    .add__new__btn__mobile__only {
+      display: none;
     }
-}
+  } */
